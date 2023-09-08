@@ -257,4 +257,3 @@ dependencies:
   - pip:
       - plotly==5.16.1
       - streamlit-plotly-events==0.0.6
-prefix: /home/pronozin/miniconda3/envs/lncweb
