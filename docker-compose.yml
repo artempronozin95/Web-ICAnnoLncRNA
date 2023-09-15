@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./ICAnnolncRNA:/ICAnnolncRNA
+
+    entrypoint: ["conda", "run", "--no-capture-output", "-n", "lncwebb", "streamlit", "run", "ICAnnoLncRNA.py"]
